@@ -1,0 +1,11 @@
+{
+  "name": "engine.io-monorepo",
+  "private": true,
+  "devDependencies": {
+    "lerna": "~3.20.2"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap -- --no-save",
+    "test": "lerna run test"
+  }
+}
