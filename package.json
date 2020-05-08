@@ -6,6 +6,6 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap -- --no-save",
-    "test": "lerna run test"
+    "test": "lerna run test --stream"
   }
 }
