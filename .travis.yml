@@ -1,14 +1,23 @@
 sudo: false
 language: node_js
 node_js:
-  - "8"
-  - "10"
-  - "12"
-  - "13"
+- '8'
+- '10'
+- '12'
+- '13'
+matrix:
+  include:
+  - node_js: node
+    env: BROWSERS=1
 git:
   depth: 1
 notifications:
-  irc: "irc.freenode.org#socket.io"
+  irc: irc.freenode.org#socket.io
 install:
-  - npm ci
-  - npm run bootstrap
+- npm ci
+- npm run bootstrap
+env:
+  global:
+  - secure: Kwi2wU3V8u0mb3Z5rmtuqErq0faMxPQu0QTufv2l2Pi9A6imidv8ygmDuA8lzMzLsqhY7m7IJ2cF94FLAYS5wnyQhYpQSOQ/G/LFnVGBzzRRJcYRxadAAPQZ8rhIu4OaRQpTTymT9UT4cFLUH8QzfUoaM4GfgbdT/n5WdDuDvN4=
+  - secure: UOCsPZDqdRwtMirxOrMm7aVYAhuHSt2bG1JK/jPFQlNzaGq0f3Q2f3aFikGK0LftkmoEezwlEsF6iJBBde2TTMM0zvdkD7FDSE+crJxZl0mCaZykQ8Tp+X0hQgMt1/TcK5jm9TMEZVlc58fVmMYdpF6z466Mwhp26gYylRaWM0k=
+  - secure: FioYvjNU/0rdqS4G/D1Dnv0JzKTUcRP7EPkkN4IW7haUbYRm2mT6nsc/69jY7ZObiahVSCuDVbPDCSO1j+i2cQGP16S5MhvZ4qEhZsu7oP0zIoElIME6U9epX/PLTdgXBIljT32jEZU5rCC48fx5LTtbT17RO7S6TGk9zkBrjc4=
