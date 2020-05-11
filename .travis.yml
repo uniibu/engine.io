@@ -7,7 +7,7 @@ node_js:
 - '13'
 matrix:
   include:
-  - node_js: node
+  - node_js: 12
     env: BROWSERS=1
 git:
   depth: 1
