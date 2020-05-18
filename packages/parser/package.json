@@ -28,7 +28,7 @@
     "has-binary2": "~1.0.2"
   },
   "scripts": {
-    "test": "npm run lint && npm run format:check && make test",
+    "test": "make test",
     "format:check": "prettier --check 'lib/**/*.js' 'test/**/*.js'",
     "format:fix": "prettier --write 'lib/**/*.js' 'test/**/*.js'",
     "lint": "eslint 'lib/**/*.js' 'test/**/*.js'"
