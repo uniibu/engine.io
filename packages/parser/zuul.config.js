@@ -20,10 +20,10 @@ var zuulConfig = module.exports = {
 
 if (process.env.CI === 'true') {
   zuulConfig.local = false;
-  // zuulConfig.tunnel = {
-  //   type: 'ngrok',
-  //   bind_tls: true
-  // };
+  zuulConfig.tunnel = {
+    type: 'ngrok',
+    bind_tls: true
+  };
   zuulConfig.browserify = [
     {
       transform: {

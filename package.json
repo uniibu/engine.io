@@ -6,6 +6,6 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap -- --no-save",
-    "test": "DEBUG=zuul* lerna run test --stream"
+    "test": "DEBUG=* lerna run test --stream"
   }
 }
