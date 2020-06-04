@@ -43,7 +43,7 @@
     "prettier": "^1.19.1",
     "s": "0.1.1",
     "superagent": "^3.8.1",
-    "uws": "github:mmdevries/uws#2.4.1"
+    "uws": "github:mmdevries/uws#2.9.10"
   },
   "scripts": {
     "lint": "eslint lib/ test/ *.js",

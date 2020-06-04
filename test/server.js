@@ -1863,9 +1863,6 @@ describe("server", function() {
     });
 
     it("should send and receive data with key and cert (ws)", function(done) {
-      if (UWS_ENGINE) {
-        return this.skip();
-      }
       var srvOpts = {
         key: fs.readFileSync("test/fixtures/server.key"),
         cert: fs.readFileSync("test/fixtures/server.crt"),
@@ -1945,9 +1942,6 @@ describe("server", function() {
     });
 
     it("should send and receive data with pfx (ws)", function(done) {
-      if (UWS_ENGINE) {
-        return this.skip();
-      }
       var srvOpts = {
         key: fs.readFileSync("test/fixtures/server.key"),
         cert: fs.readFileSync("test/fixtures/server.crt"),
